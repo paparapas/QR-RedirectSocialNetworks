@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyblade Portugal - Links</title>
+    <style>
+        body {
+            background-color: #0f111a; /* Cor de fundo escura do BBPT */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #a0aabf;
+            font-size: 16px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: #1f2333;
+            padding: 15px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .link-card:hover, .link-card:active {
+            transform: scale(1.02);
+            background-color: #2a2f45;
+        }
+
+        .link-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Beyblade Portugal</h1>
+        <p>Junta-te à comunidade!</p>
+    </div>
+
+    <div class="links-container">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/beyblade_pt" class="link-card" target="_blank" rel="noopener noreferrer">
+            <img src="instagram.png" alt="Instagram" class="link-icon">
+            Instagram
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://chat.whatsapp.com/GCLf0RjTFjFHzc1yK2VjPo" class="link-card" target="_blank" rel="noopener noreferrer">
+            <img src="whatsapp.png" alt="WhatsApp" class="link-icon">
+            Comunidade WhatsApp
+        </a>
+
+        <!-- Discord -->
+        <a href="https://discord.com/invite/KssWPXxFnq" class="link-card" target="_blank" rel="noopener noreferrer">
+            <img src="discord.png" alt="Discord" class="link-icon">
+            Servidor Discord
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@BeybladePortugal" class="link-card" target="_blank" rel="noopener noreferrer">
+            <img src="youtube.png" alt="YouTube" class="link-icon">
+            Canal de YouTube
+        </a>
+    </div>
+
+</body>
+</html>
