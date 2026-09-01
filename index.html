@@ -6,7 +6,7 @@
     <title>Beyblade Portugal - Links</title>
     <style>
         body {
-            background-color: #0f111a; /* Cor de fundo escura do BBPT */
+            background-color: #0f111a; 
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -20,26 +20,38 @@
 
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilos para o Logotipo Oficial */
+        .main-logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));
         }
 
         .header h1 {
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 900;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
-            margin-bottom: 10px;
+            margin: 0 0 10px 0;
         }
         
         .header p {
             color: #a0aabf;
             font-size: 16px;
+            margin: 0;
         }
 
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 16px;
             width: 100%;
             max-width: 400px;
         }
@@ -48,12 +60,12 @@
             display: flex;
             align-items: center;
             background-color: #1f2333;
-            padding: 15px 20px;
+            padding: 16px 20px;
             border-radius: 12px;
             text-decoration: none;
             color: white;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 17px;
             transition: transform 0.2s, background-color 0.2s;
             box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
         }
@@ -64,24 +76,33 @@
         }
 
         .link-icon {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             margin-right: 20px;
             object-fit: contain;
+        }
+
+        /* Ajuste específico para o Instagram parecer do mesmo tamanho */
+        .instagram-icon {
+            transform: scale(1.4); 
+            margin-left: 2px;
+            margin-right: 18px;
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1>Beyblade Portugal</h1>
+        <!-- Logotipo BBPT adicionado aqui -->
+        <img src="logo.png" alt="Logotipo Beyblade Portugal" class="main-logo">
+        <h1>BEYBLADE PORTUGAL</h1>
         <p>Junta-te à comunidade!</p>
     </div>
 
     <div class="links-container">
-        <!-- Instagram -->
+        <!-- Instagram com classe específica para ajustar o tamanho -->
         <a href="https://www.instagram.com/beyblade_pt" class="link-card" target="_blank" rel="noopener noreferrer">
-            <img src="instagram.png" alt="Instagram" class="link-icon">
+            <img src="instagram.png" alt="Instagram" class="link-icon instagram-icon">
             Instagram
         </a>
 
